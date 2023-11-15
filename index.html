@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div id="login_page">
+        <div id="bg"></div>
+        <div id="logo">
+            <img src="./img/logo.png" alt="maple" id="leaf">
+            <div id="transcendence">Transcendence</div>
+        </div>
+        <div id="login_button">
+            <div id="pngegg">
+                <img src="./img/pngegg.png" id="board">
+            </div>
+            <button id="loginBtn">로그인</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const Logo = document.getElementById("logo");
+
+        window.addEventListener("resize", () => {
+            console.log('resize');
+            
+            if (window.innerWidth < 1000 && !logo.classList.contains("hidden")) {
+                logo.classList.add("hidden");
+            } else if (window.innerWidth >= 1000) {
+                logo.classList.remove("hidden");
+            }
+            
+        })
+    </script>
+</body>
+</html>
