@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 /* bg */
 #bg {
     position: fixed;
@@ -11,40 +15,54 @@
 
 #logo {
     position: relative;
-    height: 600px;
-    z-index: 30;
+    height: 800px;
+    width: 3200px;
+}
+
+#login_button {
+    position: relative;
+    height: 800px;
+    width: 3200px;
 }
 
 #transcendence {
     position: absolute;
     right: 100px;
-    top: 50%;
+    top: 55%;
+    font-family: 'MapleStory OTF';
+    font-weight: bolder;
+    font-size: 150px;
+    line-height: 100px;
+    letter-spacing: -0.05em;
+    color: #FFFFFF;
+    -webkit-text-stroke: 8px black;
+}
+
+#leaf {
+    position: absolute;
+    right: 100px;
+    width: 500px;
+    height: auto;
+}
+
+#board {
+    position: absolute;
+    right: 100px;
+    width: 420px;
+    bottom: 5%;
+}
+
+#loginBtn {
+    position: absolute;
+    right: 190px;
+    top: 40%;
     font-family: 'MapleStory OTF';
     font-weight: bolder;
     font-size: 120px;
     line-height: 100px;
     letter-spacing: -0.05em;
     color: #FFFFFF;
-    -webkit-text-stroke: 5px black;
-}
-
-#leaf {
-    position: absolute;
-    top: 0;
-    right: 100px;
-    width: 400px;
-    height: auto;
-}
-.hidden {
-    display: none;
-}
-
-#board {
-    position: absolute;
-    right: 100px;
-    width: 400px;
-    bottom: 5%;
-    z-index: 3;
+    -webkit-text-stroke: 10px brown;
 }
 
 /* logo 1 */
