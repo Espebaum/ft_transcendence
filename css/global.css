@@ -1,0 +1,177 @@
+.hidden {
+    display: none;
+}
+
+/* index.html */
+
+#bg1 {
+    position: fixed;
+    width: 3200px;
+    height: 1650px;
+    left: 0px;
+    top: 0px;
+    background: url('../img/mapletree.jpg');
+    background-size: cover;
+}
+
+#logo-container {
+    position: relative;
+    height: 800px;
+    width: 3200px;
+}
+
+#loginBtn-container {
+    position: relative;
+    height: 800px;
+    width: 3200px;
+}
+
+#transcendence {
+    position: absolute;
+    right: 150px;
+    top: 55%;
+    font-family: 'MapleStory OTF';
+    font-weight: bolder;
+    font-size: 150px;
+    line-height: 100px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    -webkit-text-stroke: 8px black;
+}
+
+#leaf {
+    position: absolute;
+    right: 150px;
+    width: 500px;
+    height: auto;
+}
+
+#board {
+    position: absolute;
+    right: 150px;
+    width: 420px;
+    bottom: 5%;
+}
+
+#loginBtn {
+    position: absolute;
+    right: 240px;
+    top: 40%;
+    font-family: 'MapleStory OTF';
+    font-weight: bolder;
+    font-size: 120px;
+    line-height: 100px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    -webkit-text-stroke: 10px brown;
+}
+
+#temp-profile {
+    position: absolute;
+    left: 300px;
+    top: 10%;
+    text-decoration-line: none;
+    font-family: 'MapleStory OTF';
+    /* font-weight: bolder; */
+    font-size: 50px;
+    line-height: 100px;
+    /* letter-spacing: -0.05em; */
+    color: #ffffff;
+}
+
+/* profile.html */
+
+#temp-login {
+    position: absolute;
+    right: 300px;
+    top: 10%;
+    text-decoration-line: none;
+    font-family: 'MapleStory OTF';
+    /* font-weight: bolder; */
+    font-size: 50px;
+    line-height: 100px;
+    /* letter-spacing: -0.05em; */
+    color: #ffffff;
+}
+
+#bg2 {
+    position: fixed;
+    width: 2860px;
+    height: 1630px;
+    left: -300px;
+    top: -300px;
+    background: url('../img/bg3.jpg');
+    background-size: cover;
+}
+
+#character-container {
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 665px;
+    left: 1050px;
+}
+
+/* #character-container > character {
+    position: absolute;
+} */
+
+.status-bar {
+    position: fixed;
+    top: 1100px;
+    left: 1190px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bar {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #fff;
+    margin: 5px 0;
+    position: relative;
+}
+
+.nickname {
+    margin-bottom: 5px;
+    z-index: 3;
+    text-align: center;
+    font-family: 'MapleStory OTF';
+    font-size: 20px;
+    color: white;
+}
+
+.level {
+    margin-bottom: 5px;
+    z-index: 3;
+    text-align: center;
+    font-family: 'MapleStory OTF';
+    font-size: 20px;
+    color: yellow;
+}
+
+.health-bar {
+    background-color: #f00;
+    font-family: 'MapleStory OTF';
+}
+
+.mana-bar {
+    background-color: #00f;
+    font-family: 'MapleStory OTF';
+}
+
+.bar-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'MapleStory OTF';
+}
+
+.stat-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; /* 흰색 텍스트 */
+}
