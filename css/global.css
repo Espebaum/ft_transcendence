@@ -7,8 +7,6 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    /* width: 3200px;
-    height: 1650px; */
     left: 0px;
     top: 0px;
     background: url('../img/mapletree.jpg');
@@ -17,23 +15,23 @@
 
 #logo-container {
     position: relative;
-    height: 800px;
-    width: 3200px;
+    height: 400px;
+    width: 2600px;
 }
 
 #loginBtn-container {
     position: relative;
-    height: 800px;
-    width: 3200px;
+    height: 400px;
+    width: 2600px;
 }
 
 #transcendence {
     position: absolute;
     right: 150px;
-    top: 55%;
+    top: 90%;
     font-family: 'MapleStory OTF';
     font-weight: bolder;
-    font-size: 150px;
+    font-size: 120px;
     line-height: 100px;
     letter-spacing: -0.05em;
     color: #ffffff;
@@ -42,22 +40,22 @@
 
 #leaf {
     position: absolute;
-    right: 150px;
+    right: 120px;
     width: 500px;
     height: auto;
 }
 
 #board {
     position: absolute;
-    right: 150px;
-    width: 420px;
-    bottom: 5%;
+    right: 120px;
+    width: 400px;
+    top: 80%;
 }
 
 #loginBtn {
     position: absolute;
-    right: 240px;
-    top: 40%;
+    right: 196px;
+    top: 115%;
     font-family: 'MapleStory OTF';
     font-weight: bolder;
     font-size: 120px;
@@ -98,9 +96,9 @@
 }
 
 #bg2 {
-    position: fixed;
+    position: absolute;
     width: 2860px;
-    height: 1630px;
+    height: 1623px;
     left: -300px;
     top: -300px;
     background: url('../img/bg3.jpg');
@@ -108,7 +106,7 @@
 }
 
 #character-container {
-    position: fixed;
+    position: absolute;
     width: 500px;
     height: 500px;
     top: 665px;
@@ -116,13 +114,38 @@
 }
 
 .status-bar {
-    position: relative;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 300px;
     top: 1100px;
-    left: 1180px;
+    left: 1150px;
+}
+
+.status-bar-black {
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
     background-color: black;
-    padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.status-bar-grey {
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.status-bar-white {
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .bar {
@@ -130,7 +153,6 @@
     width: 200px;
     height: 30px;
     background-color: white;
-    /* border: 1px solid #fff; */
     margin: 5px 0;
     position: relative;
     align-items: center;
@@ -157,8 +179,7 @@
 .bar {
     display: flex;
     width: 100%;
-    border: 1px solid transparent;
-    background-color: white;
+    background-color: transparent;
 }
 
 .bar-name {
@@ -168,16 +189,121 @@
 }
 
 .health-bar {
-    background-color: #f00;
+    background-color: red;
     font-family: 'MapleStory OTF';
     color: white;
     justify-content: center;
-    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .mana-bar {
-    background-color: #00f;
+    background-color: deepskyblue;
     font-family: 'MapleStory OTF';
     color: white;
     justify-content: center;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 1090px;
+    left: 1500px;
+}
+
+.game-button {
+    cursor: pointer;
+    transition: 0.5s;
+
+    padding: 5px;
+    width: 150px;
+    height: 125px;
+    font-size: 50px;
+    margin: 10px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'MapleStory OTF';
+    -webkit-text-stroke: 2px white;
+}
+
+.game-button {
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+    width: 150px;
+    height: 125px;
+    font-size: 50px;
+    margin: 10px;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'MapleStory OTF';
+    -webkit-text-stroke: 2px white;
+}
+
+.game-button:hover {
+    background-color: #ff8c00;
+}
+
+.info-button {
+    padding: 5px;
+    width: 150px;
+    height: 125px;
+    font-size: 50px;
+    margin: 10px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'MapleStory OTF';
+    -webkit-text-stroke: 2px white;
+}
+
+.info-button:hover {
+    background-color: deepskyblue; /* 진한 하늘색으로 변경 */
+}
+
+.setting-button {
+    padding: 5px;
+    width: 150px;
+    height: 125px;
+    font-size: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: lavender;
+    font-family: 'MapleStory OTF';
+    -webkit-text-stroke: 2px white;
+}
+
+.setting-button:hover {
+    background-color: mediumpurple; /* 진한 보라색으로 변경 */
+}
+
+#info-container {
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    top: 400px;
+    left: 1290px;
+    width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'MapleStory OTF';
+    padding: 5px;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+}
+
+#my-info {
+    position: relative;
+}
+
+#ask-new {
+    font-size: 20px;
+}
+
+#nick-change {
+    font-size: 30px;
+    font-family: 'MapleStory OTF';
 }
