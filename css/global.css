@@ -124,8 +124,10 @@
 
 .status-bar-black {
     position: relative;
+    text-align: center;
     padding-top: 10px;
     padding-right: 10px;
+    padding-bottom: 5px;
     background-color: black;
     border-radius: 10px;
 }
@@ -160,8 +162,6 @@
 
 .nickname {
     margin-bottom: 5px;
-    z-index: 3;
-    text-align: center;
     font-family: 'MapleStory OTF';
     font-size: 20px;
     color: white;
@@ -169,10 +169,9 @@
 
 .level {
     margin-bottom: 5px;
-    z-index: 3;
-    text-align: center;
     font-family: 'MapleStory OTF';
     font-size: 20px;
+    padding-right: 15px;
     color: yellow;
 }
 
